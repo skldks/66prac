@@ -39,17 +39,22 @@ namespace WpfApp1
         {
             return new Pair(First - pair.First - pair1.First, Second - pair.Second - pair1.Second);
         }
-        public static bool operator true(Pair pair)
+        public static bool operator ==(Pair pair, Pair pair1)
         {
-            if (pair.First == pair.Second && pair.First == pair.Second)
+            if (pair.First == pair1.First && pair.Second == pair1.Second)
+            {
+                return true;
+            }
+            else return false;
+        }
+        public static bool operator !=(Pair pair, Pair pair1)
+        {
+            //return pair.First != pair1.First;
+            if (pair.First != pair1.First && pair.Second != pair1.Second)
             {
                 return false;
             }
             else return true;
-        }
-        public static bool operator false(Pair pair)
-        {
-            return pair.First != pair.Second;
         }
     }
 }

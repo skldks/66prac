@@ -94,13 +94,15 @@ namespace WpfApp1
 
         private void Compare(object sender, RoutedEventArgs e)
         {
-            if (result1.Text == result2.Text)
+            Pair pair = new Pair(Convert.ToInt32(v1.Text), Convert.ToInt32(v2.Text));
+            Pair pair1 = new Pair(Convert.ToInt32(v3.Text), Convert.ToInt32(v4.Text));
+            if (pair == pair1)
             {
                 MessageBox.Show("Пары равны");
             }
             else
             {
-                MessageBox.Show("Пары неравны");
+                MessageBox.Show("Пары не равны");
             }
         }
     }
