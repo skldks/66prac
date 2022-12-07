@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="470">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Menu VerticalAlignment="Top" Background="Black" Foreground="White">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Выход" Click="Close1"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="О программе" Click="Info">
+            </MenuItem>
+        </Menu>
+        <Button Content="Вычитание пары" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Height="20" Width="120" Background="Black" Foreground="White" BorderBrush="White" Click="subtraction2"/>
+        <Button Content="Вычитание тройки пар" HorizontalAlignment="Left" Margin="0,59,0,0" VerticalAlignment="Top" Height="21" Width="147" BorderBrush="White" Foreground="White" Background="Black" Click="subtraction3"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,23,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="v1" Foreground="White" BorderBrush="White" Background="Black" SelectionBrush="Black" TextChanged="v1_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="301,23,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="v2" Background="Black" BorderBrush="White" Foreground="White" SelectionBrush="Black"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="v3" BorderBrush="White" Foreground="White" SelectionBrush="Black" Background="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="301,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="v4" Background="Black" BorderBrush="White" SelectionBrush="Black" Foreground="White"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="result1" SelectionBrush="Black" Background="Black" BorderBrush="White" Foreground="White"/>
+        <TextBox HorizontalAlignment="Left" Margin="301,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="result2" SelectionBrush="Black" Background="Black" BorderBrush="White" Foreground="White"/>
+        <Button Content="О программе" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" BorderBrush="White" Background="Black" Foreground="White" Click="Button_Click_2"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="93,121,0,0" VerticalAlignment="Top" Background="Black" Foreground="White" BorderBrush="White" Click="Button_Click_3"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="v5" BorderBrush="White" Foreground="White" SelectionBrush="Black" Background="Black"/>
+        <TextBox HorizontalAlignment="Left" Margin="300,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name="v6" Background="Black" BorderBrush="White" SelectionBrush="Black" Foreground="White"/>
+        <Button Content="Сравнение пар" HorizontalAlignment="Left" Margin="11,89,0,0" VerticalAlignment="Top" Height="18" Width="120" BorderBrush="White" Foreground="White" Background="Black" Click="Compare"/>
+    </Grid>
+</Window>
